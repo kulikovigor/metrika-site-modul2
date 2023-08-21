@@ -1,0 +1,144 @@
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.4s ease;
+}
+
+.burger__btn {
+  display: none;
+  z-index: 2000;
+}
+
+.burger_open {
+  visibility: visible;
+}
+
+.burger__content {
+  width: 274px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 80px 0 65px 30px;
+  background-color: #fff;
+  transition: transform 0.3s linear;
+  transform: translate(100%);
+}
+
+.burger_open .burger__content {
+  transform: translate(0);
+}
+
+.burger__logo {
+  width: 156px;
+}
+.burger__nav {
+  margin-top: 50px;
+}
+
+.burger__nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.burger__nav__link {
+  font-size: 25px;
+  line-height: 34px;
+  text-decoration: none;
+  color: #000;
+}
+
+.burger__contacts {
+  margin-top: 90px;
+}
+
+.burger__contacts_title {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.burger__contactsPhone {
+  font-size: 20px;
+  line-height: 46px;
+  text-decoration: none;
+  color: #121212;
+}
+
+.burger__contactsTG_link {
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #121212;
+}
+
+@media (max-width: 1199px) {
+  .burger__btn {
+    display: block;
+    width: 50px;
+    position: relative;
+    background: none;
+    border: none;
+  }
+
+  .burger__btn::before,
+  .burger__btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+  }
+
+  .burger-btn_open::before,
+  .burger-btn_open::after {
+    display: none;
+  }
+
+  .burger__btn::after {
+    top: 6px;
+    width: 31px;
+  }
+
+  .burger-btn_open {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 34px;
+    width: 34px;
+    background-image: url(../resources/mob__close_cross.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup__close-btn {
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    background-image: url(../resources/mob__close_cross.png);
+  }
+
+  .burger__btn {
+    width: 38px;
+  }
+
+  .burger__btn::after {
+    width: 24px;
+  }
+}

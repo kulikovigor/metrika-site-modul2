@@ -1,0 +1,113 @@
+@import "styles/header.css";
+@import "styles/intro.css";
+@import "styles/about-us.css";
+@import "styles/projects.css";
+@import "styles/services.css";
+@import "styles/contacts.css";
+@import "styles/gallery.css";
+@import "styles/buttons.css";
+@import "styles/reviews.css";
+@import "styles/popup.css";
+@import "styles/order.css";
+@import "styles/input.css";
+@import "styles/heading.css";
+@import "styles/burger.css";
+@import "styles/footter.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  width: 100%;
+}
+
+.body_fixed {
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h2,
+h3,
+a,
+p,
+div,
+.image-text,
+.about_us_text,
+.project_name,
+.project_link,
+.full_button {
+  letter-spacing: -0.03em;
+}
+
+main {
+  background: #ffffff;
+}
+
+.container-black {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+section,
+.container {
+  margin: 0 auto;
+  width: 1150px;
+}
+
+section {
+  padding-top: 150px;
+}
+
+.section-long {
+  padding-bottom: 150px;
+}
+
+.section-full {
+  width: 100%;
+}
+
+.section-nopadd {
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  section,
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 17px;
+  }
+
+  section {
+    padding-top: 120px;
+  }
+  .section-long {
+    padding-bottom: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  section,
+  .container {
+    padding-left: 13px;
+    padding-right: 12px;
+  }
+
+  section {
+    padding-top: 80px;
+  }
+
+  .section-long {
+    padding-bottom: 80px;
+  }
+
+  section:first-child {
+    padding-top: 60px;
+  }
+}

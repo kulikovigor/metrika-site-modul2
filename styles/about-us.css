@@ -1,0 +1,51 @@
+.about_us_text {
+  width: 1048px;
+  /*height: 366px;*/
+  margin-top: 30px;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 61px;
+  text-align: left;
+}
+
+a.about_us_btn {
+  height: 67px;
+  width: 255px;
+  font-size: 20px;
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  line-height: 67px;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: -0.6px;
+  border: 1px solid #ad1818;
+  background-color: #ad1818;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .about_us_text {
+    width: 690px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_us_text {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  a.about_us_btn {
+    height: 51px;
+    width: 200px;
+    padding: 15.207px 30.414px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

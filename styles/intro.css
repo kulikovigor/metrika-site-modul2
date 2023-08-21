@@ -1,0 +1,78 @@
+.intro {
+  padding-top: 73px;
+}
+
+.intro_text {
+  width: 956px;
+}
+
+.intro-image {
+  position: relative;
+  margin-top: 30px;
+  height: 500px;
+  width: 1150px;
+
+  background-image: url("../resources/interior.png");
+  background-repeat: no-repeat;
+}
+
+.intro_image-text {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  width: 448px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  .intro_text {
+    width: 766px;
+  }
+
+  .intro-image {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .intro_image-text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 767px) {
+ 
+  .intro {
+    padding-top: 61px;
+  }
+  
+  .intro_text {
+    width: 100%;
+  }
+
+  .intro-image {
+    margin-top: 25px;
+    width: 100%;
+    height: 350px;
+  }
+
+  .intro_image-text {
+    font-size: 16px;
+    line-height: 22px;
+    width: 312px;
+    left: 15px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro-image {
+    background-image: url("../resources/interior_mobile.png");
+    height: 305px;
+  }
+}

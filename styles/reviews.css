@@ -1,0 +1,70 @@
+.reviews {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.review {
+  width: calc(50% - 25px);
+}
+
+.review:last-child:nth-child(2n + 1) {
+  /*селектор проверяет попадает ли элемент в эту форму. в этот сл. указывает на нечетный элемент*/
+  width: 75%;
+}
+
+.review__title {
+  margin-bottom: 14px;
+  font-size: 45px;
+  line-height: 61px;
+}
+
+.review__text {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+@media (max-width: 1199px) {
+  .reviews {
+    column-gap: 10px;
+    row-gap: 80px;
+  }
+
+  .review {
+    width: calc(50% - 5px);
+  }
+
+  .review__title {
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .review__text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .reviews {
+    margin-top: 22px;
+    flex-direction: column;
+  }
+
+  .review {
+    width: 100%;
+  }
+
+  .review__title {
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .review__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
