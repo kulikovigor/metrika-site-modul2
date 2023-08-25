@@ -54,6 +54,10 @@
     flex-direction: column;
   }
 
+   .review:last-child:nth-child(2n + 1) {
+    width: 100%;
+  }
+
   .review {
     width: 100%;
   }
