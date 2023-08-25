@@ -12,7 +12,7 @@
 @import "styles/input.css";
 @import "styles/heading.css";
 @import "styles/burger.css";
-@import "styles/footter.css";
+@import "styles/footer.css";
 
 html {
   scroll-behavior: smooth;
